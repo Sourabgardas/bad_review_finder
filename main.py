@@ -21,7 +21,8 @@ content = st.container()
 with content:
     header = st.title('Bad review finder')
     file = st.file_uploader("upload the file to be checked")
-    df = pd.read_csv(file)
+    if file is not None:
+        df = pd.read_csv(file)
     df = df[['Text', 'Star']]
 
 
