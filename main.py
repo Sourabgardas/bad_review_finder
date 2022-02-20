@@ -85,8 +85,4 @@ with content:
     A = df[df['Vader Analysis'] == 'Positive']
     B = A[df['Star'] <= 2]
     B = B[['Text', 'Star']]
-    C = pd.DataFrame()
-    if B != C:
-        B
-    else:
-        C
+    B
